@@ -1,0 +1,44 @@
+P2C1XThreads
+============
+
+C1X threads draft implementation as per
+WG14 N1425 Draft 2009-11-24 ISO/IEC 9899:201x
+http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1425.pdf
+Using POSIX threads as backend
+
+Please note: This was/is done for my own education and the fact that I don't
+want to start new projects using whatever threading API when there is a standard
+coming. So this project should be considered a bridging project to provide
+myself (and maybe others) with a working C1X threads library, before the
+standard is even here. Since the standard is not final and does not have much
+documentation nor reference therefor and can still change consider this a draft
+implementation that resembles the behavior of the upcoming C1X threads standard
+but does not claim to be complete nor perfect ... does not even claim to be
+correct! (The IEC draft documents do not make much remarks on the actual
+behavior of some functions. In my opinion of course, it might make perfect sense
+to someone else.)
+
+In short it has issues but works for me (until the standard is final and a real
+implementation is available, that is).
+
+P.S. And it is a piggyback implementation on POSIX which the C1X threads.h is
+an almost 1:1 binding. (The name of the project therefor means Pthreads to C1X
+threads.)
+
+
+
+Copyright (c) 2010, Michael Gruhn <michael-gruhn@web.de>
+Some rights reserved.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
